@@ -43,12 +43,12 @@ namespace TyphoonDotNET
     {
         List<User> users = new List<User>()
         {
-            new User("John", "123qwe32", "sashema09@gmail.com")
+            new User("John", "test", "sashema09@gmail.com")
         };
 
         public async Task GetUser(Request req, Response res)
         {
-            res.Json(users[0]);
+            res.Json(users[0]); // test
         }
 
         public async Task PostUser(Request req, Response res)
